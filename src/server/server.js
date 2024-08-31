@@ -1,20 +1,15 @@
-const path = require('path');
 const express = require('express');
+const path = require('path');
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(express.static('dist'));
 
-app.get('/', function (req, res) {
-    res.sendFile(path.resolve('src/client/html/views/index.html'));
+// Serve the index.html from the dist folder
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../dist/index.html'));
 });
 
-// Example of a route to handle API calls
-app.post('/api', function (req, res) {
-    // Handle API call here
-    res.send({ data: "Your response data" });
-});
-
-const port = 8081;
-app.listen(port, function () {
-    console.log(`Server running on localhost:${port}`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });

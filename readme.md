@@ -1,16 +1,20 @@
 # Travel App
 
-This is a travel planning application that allows users to input a destination and fetch relevant data using various APIs like Geonames, Weatherbit, and Pixabay.
+A travel application that integrates Geonames, Weatherbit, and Pixabay APIs.
 
-## Installation
+## Getting Started
 
-1. Clone the repo
-2. Run `npm install` to install dependencies
-3. Run `npm run build-dev` to start the development server
+1. Clone the repository.
+2. Install dependencies: `npm install`
+3. Build the project: `npm run build`
+4. Start the server: `npm start`
 
-## Dependencies
+## APIs Used
 
-- Express
-- Webpack
-- Jest
-- Node-fetch
+- **Geonames API**: For location coordinates.
+- **Weatherbit API**: For current weather data.
+- **Pixabay API**: For images of the location.
+
+## License
+
+This project is licensed under the MIT License.
