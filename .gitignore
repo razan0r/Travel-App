@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Output directories
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Webpack specific
+.cache/
+.vscode/
+
+# Jest coverage reports
+coverage/
+
+# IDE-specific files
+.idea/
+*.iml
+
+# SASS cache
+.sass-cache/

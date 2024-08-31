@@ -1,0 +1,33 @@
+{
+    "name": "travel-app",
+    "version": "1.0.0",
+    "description": "A travel planning application that integrates multiple APIs to provide weather, location, and image data.",
+    "main": "src/server/server.js",
+    "scripts": {
+        "start": "node src/server/server.js",
+        "build-prod": "webpack --config webpack.prod.js",
+        "build-dev": "webpack serve --config webpack.dev.js",
+        "test": "jest"
+    },
+    "author": "razan",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "node-fetch": "^2.6.1"
+    },
+    "devDependencies": {
+        "babel-loader": "^8.2.2",
+        "babel-preset-env": "^1.7.0",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.5.1",
+        "html-webpack-plugin": "^5.3.1",
+        "jest": "^27.3.1",
+        "sass": "^1.45.0",
+        "sass-loader": "^12.1.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.64.4",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.4.0",
+        "workbox-webpack-plugin": "^6.4.1"
+    }
+}
