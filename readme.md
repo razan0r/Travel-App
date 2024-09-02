@@ -9,6 +9,11 @@ A travel application that integrates Geonames, Weatherbit, and Pixabay APIs.
 3. Build the project: `npm run build`
 4. Start the server: `npm start`
 
+## Node.js Version
+
+Ensure you are using Node.js version **v18.18.2** to avoid any compatibility issues with dependencies.
+
+
 ## APIs Used
 
 - **Geonames API**: For location coordinates.
