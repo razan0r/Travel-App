@@ -23,3 +23,17 @@ Ensure you are using Node.js version **v18.18.2** to avoid any compatibility iss
 ## License
 
 This project is licensed under the MIT License.
+
+
+### Webpack Configuration
+
+The project is using Webpack 5. The `devServer` has been updated to use the `static` option instead of `contentBase`:
+
+```js
+devServer: {
+  static: {
+    directory: path.join(__dirname, 'dist'),
+  },
+  compress: true,
+  port: 9000,
+}
